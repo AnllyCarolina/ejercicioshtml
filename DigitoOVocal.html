@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Determinar si el caracter ingresado es una vocal o un digito</title>
+
+    <script>
+let caracter =prompt("Ingresa una vocal o un número del 1 al 9: ");
+
+switch(caracter)
+{
+    case "A": case "a": case "E": case "e": case "I": case "i": case "O": case "o": case "U": case "u":
+    alert(  "El valor ingresado es una vocal ");
+    break;
+
+    case "1": case "2": case "3": case "4": case "4": case "5": case "6": case "7": case "8": case "9":
+    alert(  "El valor ingresado es un digito");
+    break;
+
+    default:
+    alert("Ha ingresado un valor no identificado");
+    break;
+}
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
