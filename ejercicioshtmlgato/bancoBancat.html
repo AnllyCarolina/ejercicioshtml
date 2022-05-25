@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Banco Bancat</title>
+    <script>
+    alert("BANCAT - Banco de los gatos");
+    alert("Esta es la sucursal virtual del BANCAT para realizar tranferencias de dinero");
+    let client = 12345;
+    let identific = prompt("Por favor ingrese su número de identificación");
+    let bancodest = 1;
+    let costransf = 10000;
+    let saldo = 1000000;
+    let montotransf = "";
+        if(identific == client){
+        alert("Bienvenido, Usted es nuestro cliente!!!");
+        prompt("La cuenta destino es del mismo banco? Marque 1 si es afirmativo, 0 si es negativo."); 
+             if(bancodest == 1){
+             alert("El costo de la transferencia es $0 pesos");}
+             else{
+             alert("El costo de la transferencia es $10000 pesos");
+             }
+             prompt("Cuanto desea transferir?");
+
+                  if(montotransf + costransf <= saldo){
+                  alert("Transferencia exitosa");}
+                  else{
+                  alert("El monto a transferir excede el saldo de su cuenta");
+             }
+        }
+        else{
+            alert("No es nuestro cliente")
+        }
+    </script>
+</head>
+<body>    
+</body>
+</html>
